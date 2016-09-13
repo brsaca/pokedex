@@ -14,7 +14,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     @IBOutlet weak var collectionView: UICollectionView!
     
     var arrPokemon = [Pokemon]()
-    var musicPlayer:AVAudioPlayer!
+    var musicPlayer: AVAudioPlayer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,10 +24,10 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     }
     
     func initAudio(){
-        let path = Bundle.main.path(forResource: "music", ofType: "mp3")!
+        let path = Bundle.main.path(forResource:"music", ofType: "mp3")!
         
         do{
-            musicPlayer = try AVAudioPlayer(contentsOf: URL(string:path)!)
+            musicPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: path))
             musicPlayer.prepareToPlay()
             musicPlayer.numberOfLoops = 1
             musicPlayer.play()

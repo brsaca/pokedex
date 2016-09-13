@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		85C5A73D1D87AD280077FCF8 /* pokemon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 85C5A73C1D87AD280077FCF8 /* pokemon.ttf */; };
+		85C5A7431D87AE6D0077FCF8 /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 85C5A7411D87AE6D0077FCF8 /* music.mp3 */; };
+		85C5A7441D87AE6D0077FCF8 /* music.png in Resources */ = {isa = PBXBuildFile; fileRef = 85C5A7421D87AE6D0077FCF8 /* music.png */; };
 		85CB87861D875E360080E35E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85CB87851D875E360080E35E /* AppDelegate.swift */; };
 		85CB87881D875E360080E35E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85CB87871D875E360080E35E /* ViewController.swift */; };
 		85CB878B1D875E360080E35E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85CB87891D875E360080E35E /* Main.storyboard */; };
@@ -19,6 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		85C5A73C1D87AD280077FCF8 /* pokemon.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pokemon.ttf; sourceTree = "<group>"; };
+		85C5A7411D87AE6D0077FCF8 /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
+		85C5A7421D87AE6D0077FCF8 /* music.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = music.png; sourceTree = "<group>"; };
 		85CB87821D875E360080E35E /* pokedex 3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "pokedex 3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		85CB87851D875E360080E35E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85CB87871D875E360080E35E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +49,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		85C5A73E1D87AD300077FCF8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				85C5A7411D87AE6D0077FCF8 /* music.mp3 */,
+				85C5A7421D87AE6D0077FCF8 /* music.png */,
+				85CB87971D8761C90080E35E /* pokemon.csv */,
+				85C5A73C1D87AD280077FCF8 /* pokemon.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		85C5A73F1D87AD560077FCF8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				85CB87871D875E360080E35E /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		85C5A7401D87AD6E0077FCF8 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				85CB879F1D8776590080E35E /* csv.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
 		85CB87791D875E340080E35E = {
 			isa = PBXGroup;
 			children = (
@@ -65,13 +98,13 @@
 				85CB879C1D8769950080E35E /* View */,
 				85CB87991D8762B30080E35E /* Model */,
 				85CB87851D875E360080E35E /* AppDelegate.swift */,
-				85CB87871D875E360080E35E /* ViewController.swift */,
-				85CB879F1D8776590080E35E /* csv.swift */,
+				85C5A73F1D87AD560077FCF8 /* Controller */,
+				85C5A7401D87AD6E0077FCF8 /* Utils */,
+				85C5A73E1D87AD300077FCF8 /* Resources */,
 				85CB87891D875E360080E35E /* Main.storyboard */,
 				85CB878C1D875E360080E35E /* Assets.xcassets */,
 				85CB878E1D875E360080E35E /* LaunchScreen.storyboard */,
 				85CB87911D875E360080E35E /* Info.plist */,
-				85CB87971D8761C90080E35E /* pokemon.csv */,
 			);
 			path = "pokedex 3";
 			sourceTree = "<group>";
@@ -152,7 +185,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85C5A73D1D87AD280077FCF8 /* pokemon.ttf in Resources */,
+				85C5A7441D87AE6D0077FCF8 /* music.png in Resources */,
 				85CB87901D875E360080E35E /* LaunchScreen.storyboard in Resources */,
+				85C5A7431D87AE6D0077FCF8 /* music.mp3 in Resources */,
 				85CB878D1D875E360080E35E /* Assets.xcassets in Resources */,
 				85CB87981D8761CA0080E35E /* pokemon.csv in Resources */,
 				85CB878B1D875E360080E35E /* Main.storyboard in Resources */,
@@ -332,6 +368,7 @@
 				85CB87961D875E360080E35E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

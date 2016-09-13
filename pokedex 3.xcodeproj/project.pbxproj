@@ -158,6 +158,7 @@
 					85CB87811D875E350080E35E = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 3RQAYNAD56;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 				};
